@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "Oranienbaum";
+    src: url("../assets/fonts/Oranienbaum-Regular.ttf");
+  }
+  
+  .home-page-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    text-align: right; 
+    padding-right: 50%; 
+    color: #342f2d;
+    position: relative;
+  }
+  
+  .home-page-title {
+    font-family: Oranienbaum;
+    font-size: 10rem;
+    font-weight: 200;
+    padding-top: 10rem;
+  }
+  
+  .home-page-subtitle {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-top: 1rem; 
+    width: 25rem; 
+  }
+
+  .rotating-container {
+    position: absolute;
+    top: 10%;
+    right: 42%;
+    cursor: pointer;
+  }
+  
+  .rotating-text {
+    width: 120px; /* Adjust size as needed */
+    height: 120px; /* Adjust size as needed */
+    animation: rotate 10s linear infinite;
+  }
+
+  text {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  
+}
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
