@@ -2,5 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #EEE9E3;
+    
 }
+
+/* Theme Styles */
+
+.light-theme {
+    background: #EEE9E3;
+    color: #342f2d;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .dark-theme {
+    background-color: #342f2d;
+    color: #EEE9E3;
+    transition: background-color 0.3s, color 0.3s;
+  }

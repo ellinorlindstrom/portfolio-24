@@ -5,7 +5,7 @@
   align-items: flex-start; 
   text-align: left; 
   padding-right: 50%; 
-  color: #342f2d;
+  //color: #342f2d;
   padding-left: 10rem;
 }
 
@@ -14,6 +14,7 @@
     font-size: 10rem;
     font-weight: 200;
     padding-top: 5rem;
+    color: #D6594C;
   }
 
   .about-page-subtitle {
@@ -27,7 +28,6 @@
   .animatedUnderline {
     position: relative;
     display: inline-block;
-    color: #342f2d;
     text-decoration: none;
   }
   
@@ -49,4 +49,15 @@
     100% {
       width: 100%;
     }
+  }
+
+
+  /* Theme Styles */
+
+  .light-theme .animatedUnderline {
+    color: #342f2d;
+  }
+
+  .dark-theme .animatedUnderline  {
+    color: #EEE9E3; 
   }

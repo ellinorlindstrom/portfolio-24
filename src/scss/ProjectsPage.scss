@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end; 
-    color: #342f2d;
+    //color: #342f2d;
     padding-top: 5rem;
     padding-left: 5rem; 
   }
@@ -35,7 +35,7 @@
     overflow: hidden;
     border-radius: 8px;
     text-decoration: none;
-    color:#342f2d;
+    //color:#342f2d;
   }
   
   
@@ -53,8 +53,7 @@
   .projectTitle {
     font-family: "Oranienbaum", serif;
     font-size: 1.5rem;
-    color: #342f2d;
-    margin-top: 0.5rem;
+    margin: 1rem 0rem;
   }
   
   .projectOverlay {
@@ -85,4 +84,18 @@
     padding: 1rem 1rem;
     border-radius: 100%;
     transform: rotate(-15deg);
+  }
+
+  /* Theme Styles */
+
+  .light-theme .projectTitle {
+    color: #342f2d;
+  }
+
+  .dark-theme .projectTitle {
+    color: #EEE9E3; 
+  }
+
+  .dark-theme .projects-page-title {
+    color: #D6594C;
   }

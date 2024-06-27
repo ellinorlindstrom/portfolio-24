@@ -1,19 +1,19 @@
 import { Link } from 'react-router-dom';
-import styles from '../scss/HomePage.module.scss';
+import '../scss/HomePage.scss';
 
 
 function HomePage() {
   return (
     <>
-    <div className={styles['home-page-text']}>
-    <h1 className={styles['home-page-title']}>
+    <div className='home-page-text'>
+    <h1 className='home-page-title'>
     FRONT-END<br />DEVELOPER
   </h1>
-  <p className={styles['home-page-subtitle']}>
-  Driven, and curious Front End Developer Student, with a fondness for motion- and interactive designs
+  <p className='home-page-subtitle'>
+  Driven and curious Front End Developer student with a passion for motion and interactive designs.
   </p>
-  <Link className={styles['rotating-container']} to='/contact'>
-        <svg className={styles['rotating-text']} viewBox="0 0 100 100">
+  <Link className='rotating-container' to='/contact'>
+        <svg className='rotating-text' viewBox="0 0 100 100">
           <path id="circlePath" d="
             M 50, 50
             m -37, 0
