@@ -12,7 +12,8 @@ const NavBar: React.FC = () => {
           <div className="main-title">LINDSTRÖM</div>
           <div className="subtitle">PORTFOLIO</div>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggler" />
+
         <Navbar.Collapse
           id="basic-navbar-nav"
         >
