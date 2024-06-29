@@ -20,8 +20,7 @@
     font-family: Roboto, sans-serif;
     font-size: 2rem;
     font-weight: 300;
-    padding-bottom: .5rem;
-    padding-left: 1rem;
+    padding-bottom: .5rem;  
   }
 
   .contact-details-container {
@@ -238,10 +237,6 @@
         padding-left: 1rem;
       }
 
-      .contact-page-subtitle {
-        margin-bottom: 1rem;
-        }
-
       .internship-details p {
         width: 70vw;
        }
@@ -250,6 +245,17 @@
   
   @media (max-width: 700px) {
 
+    .contact-page-title {
+      margin-left: 0rem;
+      }
+      
+      .contact-page-text {
+        padding-left: 0rem;
+        margin-left: 0rem;
+      }
+      .contact-content {
+        padding-left: 0rem;
+      }
   
     .contact-page-title {
       font-size: 3.5rem;

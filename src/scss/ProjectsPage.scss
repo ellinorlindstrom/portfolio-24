@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 
 .projects-page-text {
     display: flex;
@@ -85,20 +88,6 @@
     border-radius: 100%;
     transform: rotate(-15deg);
   }
-
-* {
-  scrollbar-width: thin; /* Thickness of the scrollbar */
-  scrollbar-color: #342f2d #EEE9E3; /* Color of the thumb and track */
-}
-
-/* For Edge, IE, and other browsers */
-body {
-  -ms-overflow-style: none; /* Hides the scrollbar in IE */
-}
-
-body::-webkit-scrollbar {
-  display: none; /* Hides the scrollbar in Edge and other browsers */
-}
 
 
   /* Theme Styles */
@@ -188,19 +177,12 @@ body::-webkit-scrollbar {
 
 @media (max-width: 520px) {
 
-  .projects-page-subtitle {
-    display: none;
+  .projects-page-title {
+    font-size: 3.5rem;
     }
 
     .projectCard {
-      width: 75vw; 
+      width: 55vw; 
     }
 }
 
-@media (max-width: 420px) {
-
-  .projects-page-subtitle {
-  display: none;
-  }
-
-}
