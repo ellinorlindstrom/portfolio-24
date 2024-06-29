@@ -17,10 +17,10 @@
   .contact-content {
     display: flex;
     flex-direction: column;
-    font-family: sans-serif;
+    font-family: Roboto;
     font-size: 2rem;
-    font-weight: 100;
-    margin-top: .5rem;
+    font-weight: 300;
+    padding-bottom: .5rem;
     padding-left: 1rem;
   }
 
@@ -50,8 +50,8 @@
   .internship-details {
     font-size: .7rem;
     padding-left: 0;
-    font-family: sans-serif;
-    font-weight: 100;
+    font-family: Roboto;
+    font-weight: 300;
     margin-top: 1.5rem;
   }
   
@@ -78,7 +78,7 @@
   }
 
   .bolder {
-    font-weight: 600;
+    font-weight: 400;
 }
 
   .typing-container{
@@ -88,9 +88,9 @@
   .contact-page-subtitle {
     font-size: .3rem;
     letter-spacing: 0.2em;
-    font-family: sans-serif;
+    font-family: Roboto;
     border-right: .07em solid black;
-    font-weight: 100;
+    font-weight: 300;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;

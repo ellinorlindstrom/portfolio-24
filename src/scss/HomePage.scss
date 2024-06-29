@@ -2,6 +2,10 @@
   font-family: "Oranienbaum";
   src: url("../assets/fonts/Oranienbaum-Regular.ttf");
 }
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Regular.ttf");
+}
 
 .home-page-container{
   display: flex;
@@ -26,9 +30,9 @@
 }
 
 .home-page-subtitle {
-  font-family: sans-serif;
+  font-family: Roboto;
   font-size: 1rem;
-  font-weight: 100;
+  font-weight: 300;
   margin-top: 1rem; 
 }
 

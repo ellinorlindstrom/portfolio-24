@@ -8,9 +8,9 @@ function ProjectsPage() {
     <div className='projects-page-text'>
 
           <h2 className="projects-page-title">PROJECTS</h2>
-          <p className="projects-page-subtitle">
+        {/*   <p className="projects-page-subtitle">
             A Curated Selection.
-          </p>
+          </p> */}
           </div>
           <div className="projectsGrid">
   {projects.map((project) => (

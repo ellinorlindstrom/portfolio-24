@@ -16,9 +16,9 @@
   }
   
   .projects-page-subtitle {
-    font-family: sans-serif;
+    font-family: Roboto;
     font-size: .5rem;
-    font-weight: 100;
+    font-weight: 300;
 
   }
   
@@ -86,6 +86,21 @@
     transform: rotate(-15deg);
   }
 
+* {
+  scrollbar-width: thin; /* Thickness of the scrollbar */
+  scrollbar-color: #342f2d #EEE9E3; /* Color of the thumb and track */
+}
+
+/* For Edge, IE, and other browsers */
+body {
+  -ms-overflow-style: none; /* Hides the scrollbar in IE */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar in Edge and other browsers */
+}
+
+
   /* Theme Styles */
 
   .light-theme .projectTitle {
@@ -99,6 +114,11 @@
   .dark-theme .projects-page-title {
     color: #D6594C;
   }
+
+  .dark-theme * {
+    scrollbar-color: #EEE9E3 #342f2d;
+  }
+
 
   
 

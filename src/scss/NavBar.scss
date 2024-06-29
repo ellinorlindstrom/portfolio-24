@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Hedvig";
+  src: url(../assets/fonts/Hedvig_Letters_Serif/HedvigLettersSerif-Regular-VariableFont_opsz.ttf);
+}
+
 .navbar {
   padding: 10px 20px;
   box-shadow: none;
@@ -30,8 +35,8 @@
 
 .main-title {
   font-size: 1rem;
-  font-weight: bold;
-  font-family: sans-serif;
+  font-weight: 650;
+  font-family: Roboto;
 }
 
 .subtitle {
@@ -44,8 +49,7 @@
   display: flex;
  align-items:flex-end;
   justify-content: right;
- 
-  font-family: sans-serif;
+  font-family: Roboto;
   background: none;
   cursor: pointer;
   font-size: 1rem;
