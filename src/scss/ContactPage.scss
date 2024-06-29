@@ -3,15 +3,15 @@
     flex-direction: row;
     align-items: flex-end;
     padding-top: 1rem;
-    padding-left: 2.5rem;
   }
   
   .contact-page-title {
     font-family: Oranienbaum;
     font-size: 3rem;
     font-weight: 200;
-    margin-right: 2rem;
+    margin-right: 1rem;
     color: #D6594C;
+  
   }
   
   .contact-content {
@@ -21,7 +21,7 @@
     font-size: 2rem;
     font-weight: 100;
     margin-top: .5rem;
-    padding-left: 2.5rem;
+    padding-left: 1rem;
   }
 
   .contact-details-container {
@@ -124,7 +124,7 @@
     .contact-page-title {
       font-size: 10rem;
       padding-top: 3rem;
-      padding-left: 3rem;
+      padding-left: 1rem;
       }
 
       .contact-content {
@@ -159,10 +159,11 @@
 
     .contact-page-title {
       font-size: 9rem;
+      padding-left: 3rem;
       }
 
     .contact-content {
-      margin-left: 3rem;
+      padding-left: 3rem;
       }
   
     .contact-page-subtitle {
@@ -233,7 +234,12 @@
     .contact-page-title {
       font-size: 4rem;
       padding-top: .5rem;
+      padding-left: 1rem;
       }
+      .contact-content {
+        padding-left: 1rem;
+        
+        }
 
       .contact-page-subtitle {
         margin-bottom: 1rem;

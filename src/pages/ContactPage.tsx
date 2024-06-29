@@ -19,19 +19,19 @@ const ContactPage: React.FC = () => {
           <div className='contact-details'>
             <span className='contact-title'>EMAIL:</span>
             <a href="mailto:lindstrom.elle@gmail.com" className='contact-address'>
-            &#x2197; lindstrom.elle@gmail.com
+             lindstrom.elle@gmail.com
             </a>
           </div>
           <div className='contact-details'>
             <span className='contact-title'>LINKEDIN:</span>
             <a href="https://www.linkedin.com/in/ellinor-amanda-lindstrom/" className='contact-address'>
-            &#x2197; Ellinor Lindström
+              Ellinor Lindström
             </a>
           </div>
           <div className='contact-details'>
             <span className='contact-title'>GITHUB:</span>
             <a href="https://github.com/ellinorlindstrom" className='contact-address'>
-            &#x2197; ellinorlindstrom
+              ellinorlindstrom
             </a>
           </div>
         </div>
