@@ -1,81 +1,16 @@
-/* 
-
 .navbar {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    box-shadow: none;
-    //color: #342f2d;
-  
-    .title {
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        cursor: pointer;
-        //color: #342f2d;
-        text-decoration: none;
-
-  
-      .main-title {
-        font-size: 1rem;
-        font-weight: bold;
-        font-family: sans-serif;
-      }
-  
-      .subtitle {
-        font-size: 1rem;
-        font-family: serif;
-        font-weight:100;
-      }
-    }
-  
-    .nav-links {
-      display: flex;
-      align-items: center;
-      justify-content:center;
-      flex-grow: 1; 
-      font-family: sans-serif;
-      background: none;
-      cursor: pointer;
-      font-size: 1rem;
-      border: none;
-      
-  
-      .nav-link {
-        justify-content: flex-end;
-        padding: 3rem;
-        //color: #342f2d;
-        text-decoration: none;
-        }
-      }
-      .nav-link:hover {
-        color: #D6594C;
-        font-weight: bold;
-      }
-      .nav-link:active {
-        //color: #342f2d;
-        font-weight: bold;
-      }
-    
-    }
-
- */
-
- .navbar {
-  display: flex;
-  align-items: center;
   padding: 10px 20px;
   box-shadow: none;
 }
 
 .title {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
   cursor: pointer;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1.5rem;
+
 }
 
 .main-title {
@@ -92,9 +27,9 @@
 
 .nav-links {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-grow: 1;
+ align-items:flex-end;
+  justify-content: right;
+ 
   font-family: sans-serif;
   background: none;
   cursor: pointer;
@@ -103,8 +38,7 @@
 }
 
 .nav-link {
-  justify-content: flex-end;
-  padding: 3rem;
+  margin-right: 1.5rem;
   text-decoration: none;
 }
 
@@ -117,6 +51,34 @@
   font-weight: bold;
 }
 
+.nav-link:active,
+.nav-link.active-nav-link {
+  font-weight: bold;
+}
+
+
+.theme-button {
+  background: none;
+  border: none; 
+  cursor: pointer;
+  margin-right: 1.5rem;
+}
+
+button.navbar-toggler {
+  border: none;
+  outline: none;
+  margin: 1.5rem;
+}
+
+button.navbar-toggler.collapsed {
+  border: none;
+  outline: none;
+}
+
+.navbar-collapse {
+  position:relative;
+  z-index: 1000;
+}
 
 /* Theme-specific styles for navbar links */
 .light-theme .navbar .nav-link,
@@ -125,6 +87,13 @@
 }
 
 .dark-theme .navbar .nav-link,
-.dark-theme .title {
+.dark-theme .title 
+{
   color: #EEE9E3;
 }
+
+.dark-theme .title:hover {
+  color: #EEE9E3;
+}
+
+

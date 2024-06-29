@@ -4,25 +4,25 @@
     flex-direction: row;
     align-items: flex-end; 
     //color: #342f2d;
-    padding-top: 5rem;
+    padding-top: 1rem;
     padding-left: 5rem; 
   }
   
   .projects-page-title {
     font-family: Oranienbaum;
-    font-size: 10rem;
+    font-size: 3rem;
     font-weight: 200;
     margin-right: 2rem; 
   }
   
   .projects-page-subtitle {
     font-family: sans-serif;
-    font-size: 1.5rem;
+    font-size: .5rem;
     font-weight: 100;
-    margin-bottom: 2rem;
+    //margin-bottom: 2rem;
   }
   
-  .projectsGrid {
+/*   .projectsGrid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 2rem;
@@ -36,6 +36,22 @@
     border-radius: 8px;
     text-decoration: none;
     //color:#342f2d;
+  } */
+
+  .projectsGrid {
+    display: flex;
+    flex-wrap: nowrap; /* Ensures items stay in a single row */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 2rem; /* Adjust as needed */
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  
+  .projectCard {
+    /* Ensure each card has appropriate width and margin */
+    flex: 0 0 auto; /* Ensures cards don't grow or shrink */
+    width: calc(100% - 2rem); /* Adjust based on gap */
+    margin-right: 2rem; /* Gap between cards */
   }
   
   
@@ -99,3 +115,76 @@
   .dark-theme .projects-page-title {
     color: #D6594C;
   }
+
+  
+
+@media (max-width: 1920px) {
+  .projects-page-title {
+    font-size: 10rem;
+    }
+
+  .projects-page-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2.6rem;
+    }
+}
+
+@media (max-width: 1575px) {
+  .projects-page-title {
+    font-size: 9rem;
+    }
+
+  .projects-page-subtitle {
+    font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 992px) {
+  .projects-page-title {
+    font-size: 8rem;
+    }
+
+  .projects-page-subtitle {
+    font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+  .projects-page-title {
+    font-size: 6rem;
+    }
+
+  .projects-page-subtitle {
+    display: none;
+    }
+} 
+
+@media (max-width: 700px) {
+
+  .projects-page-title {
+    font-size: 5rem;
+    }
+
+  .projects-page-subtitle {
+   display: none;
+    }
+} 
+
+
+
+@media (max-width: 520px) {
+
+  .projects-page-subtitle {
+    display: none;
+    }
+}
+
+@media (max-width: 420px) {
+
+  .projects-page-subtitle {
+  display: none;
+  }
+
+}

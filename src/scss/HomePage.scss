@@ -1,68 +1,199 @@
 @font-face {
-    font-family: "Oranienbaum";
-    src: url("../assets/fonts/Oranienbaum-Regular.ttf");
-  }
-  
-  .home-page-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; 
-    text-align: right; 
-    padding-right: 50%; 
-    //color: #342f2d;
-    position: relative;
-  }
-  
-  .home-page-title {
-    font-family: Oranienbaum;
-    font-size: 10rem;
-    font-weight: 200;
-    padding-top: 10rem;
-  }
-  
-  .home-page-subtitle {
-    font-family: sans-serif;
-    font-size: 1.5rem;
-    font-weight: 100;
-    margin-top: 1rem; 
-    width: 25rem; 
-  }
+  font-family: "Oranienbaum";
+  src: url("../assets/fonts/Oranienbaum-Regular.ttf");
+}
 
-  .rotating-container {
-    position: absolute;
-    top: 10%;
-    right: 42%;
-    cursor: pointer;
-  }
+.home-page-container{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
   
-  .rotating-text {
-    width: 120px; /* Adjust size as needed */
-    height: 120px; /* Adjust size as needed */
-    animation: rotate 10s linear infinite;
-  }
+}
 
-  text {
+.home-page-content {
+  display: flex;
+  flex-direction: row;
+  margin-left: 6vw;
+  margin-top: 5em;
+  //align-items: flex-end;
+}
+
+.home-page-title {
+  font-family: Oranienbaum;
+  font-size: 10rem;
+  font-weight: 200;
+  padding-top: 3rem;
+}
+
+.home-page-subtitle {
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  margin-top: 1rem; 
+}
+
+.rotating-container {
+  margin-top: 6rem; 
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.rotating-text {
+  width: 80px; 
+  height: 80px; 
+  animation: rotate 10s linear infinite;
+}
+
+text {
   font-family: sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
-  
 }
-  
-  @keyframes rotate {
-    from {
+
+@keyframes rotate {
+  from {
       transform: rotate(0deg);
-    }
-    to {
+  }
+  to {
       transform: rotate(360deg);
-    }
+  }
+}
+
+.light-theme .navbar {
+  color: #342f2d;
+}
+
+.dark-theme .navbar  {
+  color: #EEE9E3; 
+}
+
+@media (max-width: 1920px) {
+  .home-page-title {
+      font-size: 9rem;
   }
 
-  /* Theme styles */
-
-  .light-theme .navbar {
-    color: #342f2d;
+  .rotating-container {
+    margin-top: 8rem; 
+    margin-left: 2rem;
   }
 
-  .dark-theme .navbar  {
-    color: #EEE9E3; 
+  .rotating-text {
+    width: 150px; 
+    height: 150px; 
   }
+}
+
+@media (max-width: 1575px) {
+  .home-page-title {
+      font-size: 8rem;
+  }
+
+  .rotating-container {
+    margin-top: 9rem; 
+    margin-left: 1.5rem;
+  }
+
+  .rotating-text {
+    width: 130px; 
+    height: 130px; 
+  }
+
+/*   .home-page-subtitle {
+      font-size: 1.5rem;
+  } */
+}
+
+@media (max-width: 992px) {
+  .home-page-title {
+      font-size: 6rem;
+      letter-spacing: .3rem;
+  }
+
+  .rotating-container {
+    margin-top: 6.5rem; 
+    margin-left: 2rem;
+  }
+
+  .rotating-text {
+    width: 120px; 
+    height: 120px; 
+  }
+
+}
+
+@media (max-width: 768px) {
+  .home-page-title {
+      font-size: 5rem;
+  }
+
+  .rotating-container {
+    margin-top: 5.5rem; 
+    margin-left: 1rem;
+  }
+
+  .rotating-text {
+      width: 95px; 
+      height: 95px; 
+  }
+} 
+
+@media (max-width: 660px) {
+  .home-page-title {
+      font-size: 4.5rem;
+  }
+
+  .rotating-container {
+    margin-top: 5.2rem; 
+    margin-left: 1rem;
+  }
+
+  .rotating-text {
+      width: 90px; 
+      height: 90px; 
+  }
+}
+
+@media (max-width: 560px) {
+  .home-page-title {
+      font-size: 4rem;
+  }
+
+  .rotating-container {
+    margin-top: 4.8rem; 
+    margin-left: 1rem;
+  }
+  
+  .rotating-text {
+      width: 85px; 
+      height: 85px; 
+  }
+} 
+
+@media (max-width: 520px) {
+
+  .rotating-text {
+      width: 68px; 
+      height: 68px; 
+  }
+
+  .home-page-title {
+      font-size: 3.5em;
+  }
+
+  .rotating-container {
+    margin-top: 5rem; 
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .home-page-title {
+      font-size: 3rem;
+      text-align: right;
+  }
+
+  .rotating-text {
+      width: 70px; 
+      height: 70px; 
+  }
+}

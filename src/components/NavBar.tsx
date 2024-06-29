@@ -1,25 +1,64 @@
-import React from 'react';
-import '../scss/NavBar.scss';
-import { Link } from 'react-router-dom';
-import ThemeToggleButton from './ThemeButton';
-import '../scss/App.scss';
+import "../scss/NavBar.scss"; // Importing navbar-specific styles
+import { Container, Navbar, Nav } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
+import ThemeToggleButton from "./ThemeButton";
 
 const NavBar: React.FC = () => {
   return (
-    <div className='navbar'>
-      <Link className='title' to="/home">
-        <div className='main-title'>ELLINOR</div>
-        <div className='main-title'>LINDSTRÖM</div>
-        <div className='subtitle'>PORTFOLIO</div>
-      </Link>
-      <div className='nav-links'>
-        <Link className='nav-link' to="/home">Home</Link>
-        <Link className='nav-link' to="/projects">Projects</Link>
-        <Link className='nav-link' to="/about">About</Link>
-        <Link className='nav-link' to="/contact">Contact</Link>
-        </div>
-        <ThemeToggleButton />
-    </div>
+    <Navbar expand="lg" className="navbar">
+      <Container fluid className="px-0">
+        <Navbar.Brand as={NavLink} to="/" className="title">
+          <div className="main-title">ELLINOR</div>
+          <div className="main-title">LINDSTRÖM</div>
+          <div className="subtitle">PORTFOLIO</div>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse
+          id="basic-navbar-nav"
+        >
+          <Nav className="nav-links mx-auto">
+            <NavLink
+              className={({ isActive }) =>
+                "nav-link" + (isActive ? " active-nav-link" : "")
+              }
+              to="/home"
+            >
+              Home
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                "nav-link" + (isActive ? " active-nav-link" : "")
+              }
+              to="/projects"
+            >
+              Projects
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                "nav-link" + (isActive ? " active-nav-link" : "")
+              }
+              to="/about"
+            >
+              About
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                "nav-link" + (isActive ? " active-nav-link" : "")
+              }
+              to="/contact"
+            >
+              Contact
+            </NavLink>            
+          </Nav>
+          <div className="d-lg-none d-flex justify-content-end w-100">
+              <ThemeToggleButton />
+            </div>
+          <div className="d-none d-lg-block">
+            <ThemeToggleButton />
+          </div>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
