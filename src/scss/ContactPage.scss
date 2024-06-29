@@ -17,7 +17,7 @@
   .contact-content {
     display: flex;
     flex-direction: column;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-size: 2rem;
     font-weight: 300;
     padding-bottom: .5rem;
@@ -50,7 +50,7 @@
   .internship-details {
     font-size: .7rem;
     padding-left: 0;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-weight: 300;
     margin-top: 1.5rem;
   }
@@ -88,7 +88,7 @@
   .contact-page-subtitle {
     font-size: .3rem;
     letter-spacing: 0.2em;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     border-right: .07em solid black;
     font-weight: 300;
     width: 100%;
