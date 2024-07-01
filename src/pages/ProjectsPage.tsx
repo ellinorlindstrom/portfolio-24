@@ -16,7 +16,8 @@ function ProjectsPage() {
   {projects.map((project) => (
     <div key={project.id} className="projectCard">
       <Link to={project.link} target="_blank">
-        <div className="projectTitle">{project.title}</div>
+        <div className="projectTitle">{project.title} {project.description}</div>
+        {/* <div className="projectDescription">{project.description}</div> */}
         <div className="projectImageWrapper">
           <img src={project.image} alt={project.title} className="projectImage" />
           <div className="projectOverlay">

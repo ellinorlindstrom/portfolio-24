@@ -6,7 +6,6 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-end; 
-
     padding-top: 1rem;
     padding-left: 5rem; 
   }
@@ -17,14 +16,16 @@ body {
     font-weight: 200;
     margin-right: 2rem; 
   }
+
+  a {
+    text-decoration: none;
+  }
   
   .projects-page-subtitle {
     font-family: Roboto, sans-serif;
     font-size: .5rem;
     font-weight: 300;
-
   }
-  
 
   .projectsGrid {
     display: flex;
@@ -33,6 +34,7 @@ body {
     gap: 2rem;
     padding-left: 5rem;
     padding-right: 5rem;
+    padding-bottom: 5rem;
   }
   
   .projectCard {
