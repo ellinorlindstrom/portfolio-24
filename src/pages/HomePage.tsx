@@ -11,7 +11,9 @@ function HomePage() {
           <div className='home-page-text'>
             <div className='home-page-content'>
             <h1 className='home-page-title'>
+            <a href='https://elleportfolio.netlify.app/' target='_blank' rel='noreferrer' className="h1-link">
               FRONTEND<br />DEVELOPER
+              </a>
             </h1>
             <Link className='rotating-container' to='/contact'>
             <svg className='rotating-text' viewBox="0 0 100 100">

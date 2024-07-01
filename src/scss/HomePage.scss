@@ -29,6 +29,10 @@
   padding-top: 3rem;
 }
 
+.h1-link {
+  text-decoration: none;
+}
+
 .home-page-subtitle {
   font-family: Roboto, sans-serif;
   font-size: 1rem;
@@ -63,11 +67,20 @@ text {
   }
 }
 
-.light-theme .navbar {
+.light-theme .navbar
+ {
   color: #342f2d;
 }
 
 .dark-theme .navbar  {
+  color: #EEE9E3; 
+}
+
+.light-theme .h1-link {
+  color: #342f2d;
+}
+
+.dark-theme .h1-link {
   color: #EEE9E3; 
 }
 
