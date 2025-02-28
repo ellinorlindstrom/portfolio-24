@@ -35,13 +35,6 @@ const ContactPage: React.FC = () => {
             </a>
           </div>
         </div>
-        <div className='internship-details'>
-          <h3>INTERNSHIP</h3>
-          <p>My primary goal is to find an environment where I can <span className='bolder'>enhance my skills</span> as a developer and <span className='bolder'>make meaningful contributions</span>. I am dedicated to <span className='bolder'>learning</span> and <span className='bolder'>growing</span> throughout.</p>
-          <p><strong>Dates:</strong></p>
-          <p>2024-09-09 - 2024-11-15 Weeks: 10</p>
-          <p>2024-12-30 - 2025-04-17 Weeks: 16</p>
-        </div>
       </div>
       <Footer />
     </>

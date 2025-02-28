@@ -8,7 +8,7 @@ function AboutPage() {
         ABOUT</h2>
         <p className='about-page-subtitle'>
         I’m a <i>curious</i> and <b>enthusiastic</b> developer with a passion for  immersive, and captivating experiences.💫 <br />
-        I am currently seeking an internship to further develop my skills in this field, and/or general skills as a developer. See my internship periods, or contact me <Link className='animatedUnderline' to='/contact'>here:)</Link> 
+        I am currently an intern at <a href='https://coolstuff.se' target='_blank' rel='noopener noreferrer'>Coolstuff</a>, learning about the ins and outs of web development. For inquiries, contact me <Link className='animatedUnderline' to='/contact'>here:)</Link> 
   </p>
         </div>
   )
