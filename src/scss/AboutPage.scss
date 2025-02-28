@@ -37,6 +37,19 @@
     background-color: #D6594C;
     animation: drawUnderline 4s linear infinite;
   }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .italic {
+    font-style: italic;
+  }
+
+  .link-no-underline {
+    text-decoration: none;
+    color: #D6594C;
+  }
   
   @keyframes drawUnderline {
     0% {
