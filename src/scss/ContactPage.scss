@@ -7,7 +7,7 @@
     font-family: Oranienbaum;
     font-size: 3rem;
     margin-right: .8rem;
-    color: #D6594C;
+    color: var(--color-secondary);
     display: inline-block;
   }
 
@@ -28,7 +28,7 @@
     font-size: 1rem;
     font-weight: bold;
     font-family: "Oranienbaum", serif;
-    color: #D24737;
+    color: var(--color-secondary)
   }
   
   .contact-address {

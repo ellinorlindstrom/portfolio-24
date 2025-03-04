@@ -5,8 +5,6 @@
     user-select: none;
 }
 
-/* Theme Styles */
-
 .light-theme {
     background: #EEE9E3;
     color: #342f2d;
@@ -17,4 +15,14 @@
     background-color: #342f2d;
     color: #EEE9E3;
     transition: background-color 0.3s, color 0.3s;
+  }
+
+  :root {
+    --primary-hue: 233;
+    --secondary-hue: 6;
+
+    --color-primary: hsl(var(--primary-hue), 81%, 35%);
+    --color-secondary: hsl(var(--secondary-hue), 61%, 58%);
+/*     --secondary-color: #342f2d;
+    --tertiary-color: #EEE9E3; */
   }
