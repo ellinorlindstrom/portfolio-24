@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function ProjectsPage() {
   return (
-    <>
+    <div className='projects-page-container'>
     <div className='projects-page-text'>
 
           <h2 className="projects-page-title">PROJECTS</h2>
@@ -28,8 +28,7 @@ function ProjectsPage() {
     </div>
   ))}
 </div>
-
-      </>
+</div>
   );
 }
 
