@@ -15,7 +15,7 @@ function HomePage() {
               FRONTEND<br />DEVELOPER
               </a>
             </h1>
-            <Link className='rotating-container' to='/contact'>
+            <Link className='rotating-container' to='/projects'>
             <svg className='rotating-text' viewBox="0 0 100 100">
               <path id="circlePath" d="
                 M 50, 50
@@ -24,15 +24,15 @@ function HomePage() {
                 a 37,37 0 1,1 -74,0" fill="none" />
               <text fill="#D6594C">
                 <textPath href="#circlePath">
-                  OPEN FOR INTERNSHIP
+                PROJECTS &nbsp; PROJECTS 
                 </textPath>
               </text>
             </svg>
           </Link>
           </div>
-       {/*      <p className='home-page-subtitle'>
+          {/*    <p className='home-page-subtitle'>
               Driven and curious Front End Developer student with a passion for motion and interactive designs.
-            </p> */}
+            </p>  */}
           </div>
         </Col>
       </Row>
