@@ -6,6 +6,8 @@
 .navbar {
   padding: 10px 20px;
   box-shadow: none;
+  position: relative;
+  z-index: 1000;
 }
 
 .profile-image {
@@ -89,8 +91,14 @@ button.navbar-toggler {
 
 
 .navbar-collapse {
-  position:relative;
-  z-index: 1000;
+  top: 100px;
+  right: 10px;
+  position:absolute;
+  z-index: 999;
+  background-color: var(--color-background-light);
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
 }
 
 /* Theme-specific styles for navbar links */
