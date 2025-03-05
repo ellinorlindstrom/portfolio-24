@@ -2,7 +2,7 @@ import "../scss/NavBar.scss"; // Importing navbar-specific styles
 import { Container, Navbar, Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import ThemeToggleButton from "./ThemeButton";
-import profileimage from "../assets/images/ellinor_lindstrom.jpg";
+import profileimage from "../assets/images/elleamanda.jpeg";
 
 const NavBar: React.FC = () => {
   return (
