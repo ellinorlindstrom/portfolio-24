@@ -12,16 +12,16 @@ function ProjectsPage() {
             A Curated Selection.
           </p> */}
           </div>
-          <div className="projectsGrid">
+          <div className="projects-grid">
   {projects.map((project) => (
-    <div key={project.id} className="projectCard">
+    <div key={project.id} className="project-card">
       <Link to={project.link} target="_blank">
         <div className="project-title">{project.title} {project.description}</div>
         {/* <div className="projectDescription">{project.description}</div> */}
-        <div className="projectImageWrapper">
-          <img src={project.image} alt={project.title} className="projectImage" />
-          <div className="projectOverlay">
-            <div className="projectView">VIEW</div>
+        <div className="project-image-wrapper">
+          <img src={project.image} alt={project.title} className="project-image" />
+          <div className="project-overlay">
+            <div className="project-view">VIEW</div>
           </div>
         </div>
       </Link>
