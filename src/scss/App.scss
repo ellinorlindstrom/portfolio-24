@@ -5,24 +5,32 @@
     user-select: none;
 }
 
+:root {
+  --primary-hue: 233;
+  --secondary-hue: 6;
+
+  --color-primary: hsl(var(--primary-hue), 81%, 35%);
+  --color-secondary: hsl(var(--secondary-hue), 61%, 58%);
+  --color-background-light: hsl(36, 20%, 93%); /* Converted #EEE9E3 to HSL */
+  --color-background-dark: hsl(30, 20%, 20%); /* Converted #342f2d to HSL */
+  --color-text-light: hsl(30, 20%, 20%); /* Converted #342f2d to HSL */
+  --color-text-dark: hsl(36, 20%, 93%); /* Converted #EEE9E3 to HSL */
+  --color-text-accent-light: hsl(var(--secondary-hue), 61%, 78%);
+  --color-text-accent-dark: hsl(var(--secondary-hue), 61%, 38%);
+
+  --font-title: 'averia-serif-libre', serif;
+  --font-body: 'Roboto', sans-serif;
+  --font-mono: 'Roboto Mono', monospace;
+}
+
 .light-theme {
-    background: #EEE9E3;
-    color: #342f2d;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .dark-theme {
-    background-color: #342f2d;
-    color: #EEE9E3;
-    transition: background-color 0.3s, color 0.3s;
-  }
+  background: var(--color-background-light);
+  color: var(--color-text-light);
+  transition: background-color 0.3s, color 0.3s;
+}
 
-  :root {
-    --primary-hue: 233;
-    --secondary-hue: 6;
-
-    --color-primary: hsl(var(--primary-hue), 81%, 35%);
-    --color-secondary: hsl(var(--secondary-hue), 61%, 58%);
-/*     --secondary-color: #342f2d;
-    --tertiary-color: #EEE9E3; */
-  }
+.dark-theme {
+  background-color: var(--color-background-dark);
+  color: var(--color-text-dark);
+  transition: background-color 0.3s, color 0.3s;
+}

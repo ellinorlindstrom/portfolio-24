@@ -15,7 +15,6 @@ const ContactPage: React.FC = () => {
           </p>
         </div>
       </div>
-      <div className='contact-content'>
         <div className='contact-details-container'>
           <div className='contact-details'>
             <span className='contact-title'>EMAIL</span>
@@ -36,7 +35,6 @@ const ContactPage: React.FC = () => {
             </a>
           </div>
         </div>
-      </div>
     </div>
     <Footer />
     </>
