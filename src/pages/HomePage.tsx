@@ -1,11 +1,10 @@
-import { Link } from 'react-router-dom';
-import { Container, Row, Col } from 'react-bootstrap';
+//import { Link } from 'react-router-dom';
+import { Container, Col } from 'react-bootstrap';
 import '../scss/HomePage.scss';
 
 function HomePage() {
   return (
     <Container fluid className=' home-page-container'>
-      <Row className='justify-content-start text-end'>
 
         <Col xl={10}  lg={10} md={8} sm={8} xs={8}>
           <div className='home-page-text'>
@@ -15,7 +14,10 @@ function HomePage() {
               FRONTEND<br />DEVELOPER
               </a>
             </h1>
-            <Link className='rotating-container' to='/projects'>
+            <p className='home-page-subtitle'>
+              Driven and curious Front End Developer student with enthusiasm for UX/UI, motion and interaction.
+            </p> 
+           {/*  <Link className='rotating-container' to='/projects'>
             <svg className='rotating-text' viewBox="0 0 100 100">
               <path id="circlePath" d="
                 M 50, 50
@@ -28,14 +30,11 @@ function HomePage() {
                 </textPath>
               </text>
             </svg>
-          </Link>
+          </Link> */}
           </div>
-          {/*    <p className='home-page-subtitle'>
-              Driven and curious Front End Developer student with a passion for motion and interactive designs.
-            </p>  */}
+   
           </div>
         </Col>
-      </Row>
     </Container>
   )
 }
