@@ -24,14 +24,14 @@ export const projects = [
       title: "03/",
       image: uppg2js1,
       description: "Lollyland Express - Candy Store",
-      link: "https://lollyland-express.netlify.app/index.html"
+      link: "https://github.com/ellinorlindstrom/lollyland-express"
     },
  {
       id: 4,
       title: "04/",
       image: uppg1js1,
       description: "Country Flag Quiz",
-      link: "https://country-flag-quiz.netlify.app/"
+      link: "https://github.com/ellinorlindstrom/world-quiz"
     }, 
   ];
   
