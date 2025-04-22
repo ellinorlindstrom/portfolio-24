@@ -5,7 +5,8 @@
 
 .navbar {
   position: relative;
-  z-index: 1000;
+  z-index: 1;
+  width: 100%;
 }
 
 .profile-image {
@@ -42,11 +43,16 @@
 }
 
 .nav-links {
+  position: absolute; 
+  left: 50%;
+  transform: translateX(-50%); 
+  display: flex;
+  justify-content: center;
   font-family: Roboto, sans-serif;
   background: none;
   font-size: 1rem;
-  border: none;
   gap: 1.5rem;
+  padding: 0; 
 }
 
 .nav-link {
@@ -66,12 +72,18 @@
   font-weight: bold;
 }
 
+.theme-toggle-container {
+  position: absolute;
+  right: 2rem;
+  top: 3rem;
+}
 
 .theme-button {
   background: none;
   border: none; 
   cursor: pointer;
   margin-right: 1.5rem;
+
 }
 
 button.navbar-toggler {
@@ -83,20 +95,18 @@ button.navbar-toggler {
 /* Theme-specific styles for navbar links */
 .light-theme .navbar .nav-link,
 .light-theme .title {
-  color: #342f2d;
+  color: var(--color-text-light);
 }
 
 .dark-theme .navbar .nav-link,
 .dark-theme .title 
 {
-  color: #EEE9E3;
+  color: var(--color-text-dark);
 }
 
 .dark-theme .title:hover {
-  color: #EEE9E3;
+  color: #ffff;
 }
-
-/* NavBar.scss */
 
 /* Light theme styles */
 .light-theme .custom-toggler .navbar-toggler-icon {

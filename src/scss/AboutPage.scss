@@ -59,7 +59,7 @@
   }
 
   .light-theme .animatedUnderline {
-    color: #342f2d;
+    color: var(--color-text-light);
   }
 
   .light-theme  .link-no-underline{
@@ -67,7 +67,7 @@
   }
 
   .dark-theme .animatedUnderline {
-    color: #EEE9E3;
+    color: var(--color-text-dark);
   }
 
   .dark-theme .about-page-title, .link-no-underline {

@@ -38,7 +38,6 @@
   .contact-title {
     font-size: 1rem;
     font-family: var(--font-title);
-    color: var(--color-primary)
   }
   
   .contact-address {
@@ -77,14 +76,18 @@
     }
 
   .light-theme .contact-address {
-    color: #342f2d;
+    color: var(--color-text-light);
+  }
+
+  .light-theme .contact-page-title, .light-theme .contact-title {
+    color: var(--color-primary);
   }
 
   .dark-theme .contact-address {
-    color: #EEE9E3; 
+    color: var(--color-text-dark);
   }
   
-  .dark-theme .contact-page-title, .contact-title {
+  .dark-theme .contact-page-title, .dark-theme .contact-title {
     color: var(--color-accent);
   }
 

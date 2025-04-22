@@ -42,11 +42,11 @@
 }
 
 .light-theme .navbar {
-  color: #342f2d;
+  color: var(--color-text-light);
 }
 
 .dark-theme .navbar {
-  color: #EEE9E3;
+  color: var(--color-text-dark);
 }
 
 .dark-theme .h1-link {

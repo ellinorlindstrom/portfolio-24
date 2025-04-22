@@ -20,13 +20,12 @@ const NavBar: React.FC = () => {
             <div className="subtitle">PORTFOLIO</div>
           </Navbar.Brand>
         </div>
-        <Navbar.Toggle
-          aria-controls="basic-navbar-nav"
-          className="custom-toggler"
-        />
+        <div className="d-none d-md-block theme-toggle-container">
+          <ThemeToggleButton />
+        </div>
 
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="nav-links mx-auto">
+          <Nav className="nav-links">
             <NavLink
               className={({ isActive }) =>
                 "nav-link" + (isActive ? " active-nav-link" : "")
@@ -60,10 +59,7 @@ const NavBar: React.FC = () => {
               Contact
             </NavLink>
           </Nav>
-          <div className="d-lg-none d-flex justify-content-end w-100">
-            <ThemeToggleButton />
-          </div>
-          <div className="d-none d-lg-block">
+          <div className="d-md-none d-flex justify-content-center w-100 mt-3">
             <ThemeToggleButton />
           </div>
         </Navbar.Collapse>
