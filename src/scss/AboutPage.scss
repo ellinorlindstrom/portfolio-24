@@ -58,21 +58,32 @@
     }
   }
 
-  .light-theme .animatedUnderline {
-    color: var(--color-text-light);
-  }
-
   .light-theme  .link-no-underline{
     color: var(--color-primary);
   }
 
-  .dark-theme .animatedUnderline {
-    color: var(--color-text-dark);
-  }
+/* First, fix the dark theme selector for .link-no-underline */
+.dark-theme .about-page-title, 
+.dark-theme .link-no-underline {
+  color: var(--color-accent);
+}
 
-  .dark-theme .about-page-title, .link-no-underline {
-    color: var(--color-accent);
-  }
+/* Now add theme-specific styles for the animated underline */
+.light-theme .animatedUnderline {
+  color: var(--color-text-light);
+}
+
+.light-theme .animatedUnderline::after {
+  background-color: var(--color-primary);
+}
+
+.dark-theme .animatedUnderline {
+  color: var(--color-text-dark);
+}
+
+.dark-theme .animatedUnderline::after {
+  background-color: var(--color-accent);
+}
 
   @media (min-width: 768px) {
   
