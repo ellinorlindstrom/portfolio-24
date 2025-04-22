@@ -99,13 +99,12 @@ button.navbar-toggler {
 }
 
 .dark-theme .navbar .nav-link,
-.dark-theme .title 
-{
+.dark-theme .title {
   color: var(--color-text-dark);
 }
 
 .dark-theme .title:hover {
-  color: #ffff;
+  color: #ffff
 }
 
 /* Light theme styles */
