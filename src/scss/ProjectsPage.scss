@@ -89,12 +89,12 @@
   color: #342f2d;
 }
 
-.dark-theme .project-title {
+.dark-theme .project-title  {
   color: #EEE9E3; 
 }
 
 .dark-theme .projects-page-title {
-  color: #D6594C;
+  color: var(--color-accent);
 }
 
 @media (min-width: 768px) {

@@ -6,21 +6,26 @@ import profileimage from "../assets/images/elleamanda.jpeg";
 
 const NavBar: React.FC = () => {
   return (
-    <Navbar expand="lg" className="navbar">
+    <Navbar expand="md" className="navbar">
       <Container fluid className="px-0">
         <div className="image-title">
-        <img src={profileimage} alt="profile image" className="profile-image" />
-        <Navbar.Brand as={NavLink} to="/" className="title">
-          <div className="main-title">ELLINOR</div>
-          <div className="main-title">LINDSTRÖM</div>
-          <div className="subtitle">PORTFOLIO</div>
-        </Navbar.Brand>
+          <img
+            src={profileimage}
+            alt="profile image"
+            className="profile-image"
+          />
+          <Navbar.Brand as={NavLink} to="/" className="title">
+            <div className="main-title">ELLINOR</div>
+            <div className="main-title">LINDSTRÖM</div>
+            <div className="subtitle">PORTFOLIO</div>
+          </Navbar.Brand>
         </div>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggler" />
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+          className="custom-toggler"
+        />
 
-        <Navbar.Collapse
-          id="basic-navbar-nav"
-        >
+        <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="nav-links mx-auto">
             <NavLink
               className={({ isActive }) =>
@@ -53,11 +58,11 @@ const NavBar: React.FC = () => {
               to="/contact"
             >
               Contact
-            </NavLink>            
+            </NavLink>
           </Nav>
           <div className="d-lg-none d-flex justify-content-end w-100">
-              <ThemeToggleButton />
-            </div>
+            <ThemeToggleButton />
+          </div>
           <div className="d-none d-lg-block">
             <ThemeToggleButton />
           </div>

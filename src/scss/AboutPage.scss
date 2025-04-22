@@ -47,7 +47,6 @@
 
   .link-no-underline {
     text-decoration: none;
-    color: var(--color-primary);
   }
   
   @keyframes drawUnderline {
@@ -63,8 +62,16 @@
     color: #342f2d;
   }
 
-  .dark-theme .animatedUnderline  {
-    color: #EEE9E3; 
+  .light-theme  .link-no-underline{
+    color: var(--color-primary);
+  }
+
+  .dark-theme .animatedUnderline {
+    color: #EEE9E3;
+  }
+
+  .dark-theme .about-page-title, .link-no-underline {
+    color: var(--color-accent);
   }
 
   @media (min-width: 768px) {

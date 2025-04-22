@@ -32,20 +32,6 @@
   text-align: center;
 }
 
-/*  .rotating-text {
-  width: 120px;
-  height: 120px;
-  animation: rotate 10s linear infinite;
-  color: black;
-} 
-
-text {
-  font-family: sans-serif;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: black;
-} */
-
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -64,7 +50,7 @@ text {
 }
 
 .dark-theme .h1-link {
-  color: #EEE9E3;
+  color: var(--color-accent);
 }
 
 /* Desktop styles */
